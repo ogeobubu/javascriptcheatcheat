@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            outline: none;
+            margin: 10px;
+        }
+
+        #btn {
+            background-color: rgb(23, 52, 89);
+            color: #f8f9f9;
+            box-shadow: .5px .5px 1px 2px #000000;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Me!</button>
+
+    <script>
+        document.getElementById('btn').onclick = function() {
+            alert('Clicked')
+        }
+    </script>
+
+    <hr>
+
+    <!-- Change Photo -->
+
+    <img src="/images/blue.jpg" alt="blue" width="250px" id="image">
+
+    <button onclick="myFunc()">Change This Pic</button>
+
+    <script>
+        function myFunc() {
+            document.getElementById('image').src = '/images/yellow.jpg'
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Writing JS Code</title>
+        
+        <script>
+            function myFunc() {
+                document.getElementById('demo').textContent = 'Hello World!';
+            }
+        </script>
+    </head>
+
+<body>
+    <p id="demo">Hello JavaScript!</p>
+    <button onclick="myFunc()">Change Text</button>
+
+    <hr>
+
+    <!-- JavaScript Statements -->
+
+    <!-- Single line statement -->
+
+    <p id="p">This is Reto</p>
+
+    <script>
+        document.getElementById('p').textContent = 'Hello World!';
+    </script>
+
+    <div style="margin-top: 500px;"></div>
+</body>
+</html>
